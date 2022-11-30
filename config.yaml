@@ -1,0 +1,33 @@
+baseurl: /
+languageCode: en-US
+title: Chris Turner
+disqusShortname: ''
+googleAnalytics: ''
+theme: hugo-sustain
+permalinks:
+  post: /post/:year/:month/:day/:slug
+params:
+  about: I love all things computer science and maths.
+  author: Haoran Sun
+  avatar: "~/static/img/okk.jpg"
+  custom_css: []
+  custom_js: []
+  occupation: Student
+  social:
+    Email: xingyunks@utexas.edu
+    Github: xingyunks
+    
+menu:
+  main:
+    - identifier: blog
+      name: blog
+      url: /post/
+      weight: 100
+    - identifier: projects
+      name: projects
+      url: /projects/
+      weight: 200
+    - identifier: resume
+      name: resume
+      url: /resume/
+      weight: 300

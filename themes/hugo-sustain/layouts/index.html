@@ -1,0 +1,21 @@
+{{ partial "head" . }}
+  <body>
+    <div id="wrap">
+      {{ partial "header" . }}
+      <section id="about">
+        <div class="container">
+        <div class="avatar">
+          <img class="img-circle" src="{{ .Site.BaseURL }}img/{{ .Site.Params.avatar }}" width="200">
+        </div>
+        <h3>I'm <strong>{{ .Site.Params.author }}</strong>, a {{ .Site.Params.occupation}}.</h3>
+        <h3>{{ .Site.Params.about}}</h3>
+        <h3>Have a look at some of my <a href="{{ .Site.BaseURL }}projects/"> projects</a>.</h3>
+        <h3>For more, check out my academic &amp; professional <a href="{{ .Site.BaseURL }}resume/">resume</a>.</h3>
+        <h3>To get in touch, contact me via email <a href="mailto:{{ .Site.Params.Social.Email }}">here</a>.</h3>
+        {{ partial "social.html" . }}
+        </div>
+      </section>
+    </div>
+    {{ partial "footer" . }}
+  </body>
+</html>
